@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Font+Awesome+5+Brands:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-font-awesome-5-brands: "Font Awesome 5 Brands";
+  --font-poppins: Poppins;
+  --font-dm-sans: "DM Sans";
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-17xl: 36px;
+  --font-size-3xl: 22px;
+  --font-size-sm: 14px;
+  --font-size-9xl: 28px;
+  --font-size-27xl: 46px;
+  --font-size-5xl: 24px;
+  --font-size-45xl: 64px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-steelblue-100: #2387c0;
+  --color-steelblue-200: #0a72ad;
+  --color-silver: #c4c4c4;
+  --color-gray-100: #242527;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-21xl: 40px;
+
+  /* border radiuses */
+  --br-1981xl: 2000px;
+}
