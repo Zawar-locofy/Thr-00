@@ -103,7 +103,7 @@
 .becauseOurWork {
   margin: 0;
 }
-.andConstruction,
+.andPoorConstructionContainer,
 .moreThan100Container,
 .weProvide {
   position: absolute;
@@ -112,13 +112,13 @@
   font-weight: 500;
   color: var(--color-silver);
 }
-.andConstruction,
+.andPoorConstructionContainer,
 .weProvide {
   top: 150px;
   font-size: var(--font-size-45xl);
   color: var(--color-white);
 }
-.andConstruction {
+.andPoorConstructionContainer {
   top: 144px;
 }
 .discoverMore {
@@ -210,8 +210,12 @@
   max-width: 100%;
   max-height: 100%;
 }
-.generalProjectParent {
+.generalProjectParent,
+.poorDesign {
   position: absolute;
+  color: var(--color-white);
+}
+.generalProjectParent {
   top: 737px;
   left: 695px;
   background: linear-gradient(
@@ -223,15 +227,12 @@
   box-shadow: 0 10px 15px rgba(1, 115, 153, 0.2);
   width: 745px;
   height: 166px;
-  color: var(--color-white);
 }
-.architecturalDesign {
-  position: absolute;
+.poorDesign {
   top: 246px;
   left: 120px;
   font-size: var(--font-size-45xl);
   font-weight: 500;
-  color: var(--color-white);
 }
 .inner {
   position: absolute;
@@ -362,26 +363,26 @@
 .theMaterialDeterminesContainer {
   left: 1059px;
 }
-.bestMaterials,
-.competitivePrice,
-.experienced,
-.onTime {
+.inExperienced,
+.late,
+.overPrice,
+.worstMaterials {
   position: absolute;
   top: 2504px;
   left: 120px;
   font-size: var(--font-size-5xl);
   font-weight: 600;
 }
-.bestMaterials,
-.competitivePrice,
-.onTime {
+.late,
+.overPrice,
+.worstMaterials {
   left: 433px;
 }
-.bestMaterials,
-.onTime {
+.late,
+.worstMaterials {
   left: 746px;
 }
-.bestMaterials {
+.worstMaterials {
   left: 1059px;
 }
 .checkOutOurContainer1,
@@ -529,7 +530,7 @@
   position: absolute;
   top: 3169px;
   left: 543px;
-  font-size: var(--font-size-3xl);
+  font-size: 22px;
   font-weight: 600;
   color: var(--color-white);
 }
@@ -566,7 +567,7 @@
   font-size: var(--font-size-base);
   color: var(--color-white);
 }
-.ourStoryWhoContainer {
+.whatDoWeContainer {
   position: absolute;
   top: 3563px;
   left: 120px;
@@ -601,8 +602,8 @@
 .div1,
 .div2,
 .div3,
-.newsUpdate,
-.ourCollectionBestContainer {
+.latestUpdates,
+.myCollection {
   position: absolute;
   top: 4154px;
   left: 120px;
@@ -612,7 +613,7 @@
 .div1,
 .div2,
 .div3,
-.ourCollectionBestContainer {
+.myCollection {
   top: 4970px;
 }
 .div1,
@@ -813,14 +814,6 @@
   height: 344px;
   object-fit: cover;
 }
-.child8 {
-  position: absolute;
-  top: 6070px;
-  left: 385px;
-  background-color: var(--color-white);
-  width: 263px;
-  height: 171px;
-}
 .ellipseIcon {
   position: absolute;
   top: 6029px;
@@ -836,25 +829,7 @@
   height: 17px;
   overflow: hidden;
 }
-.weLikeThe {
-  margin-block-start: 0;
-  margin-block-end: 8px;
-}
-.weLikeTheContainer {
-  position: absolute;
-  top: 6149px;
-  left: 406px;
-  font-size: 13px;
-  color: #939393;
-}
-.jacobMolen {
-  position: absolute;
-  top: 6109px;
-  left: 445px;
-  font-size: var(--font-size-3xl);
-  font-weight: 600;
-}
-.child9 {
+.child8 {
   position: absolute;
   top: 6184px;
   left: 1128px;
@@ -1127,6 +1102,23 @@
   position: absolute;
   top: 3494px;
   left: 828px;
+}
+.inputfilled,
+.textAreafilled {
+  position: absolute;
+  top: 4969px;
+  left: 1061px;
+}
+.inputfilled {
+  border: 0;
+  background-color: transparent;
+  top: 4990px;
+  left: 781px;
+}
+.selectfilled {
+  position: absolute;
+  top: 6168px;
+  left: 698px;
 }
 .div {
   position: relative;

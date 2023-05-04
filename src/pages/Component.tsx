@@ -1,5 +1,14 @@
 import { FunctionComponent } from "react";
-import { Button, Icon } from "@mui/material";
+import {
+  Button,
+  Icon,
+  TextField,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  FormHelperText,
+  Select,
+} from "@mui/material";
 import styles from "./Component.module.css";
 const Component: FunctionComponent = () => {
   return (
@@ -37,10 +46,10 @@ const Component: FunctionComponent = () => {
         <p className={styles.becauseOurWork}>because our work is different</p>
       </div>
       <div className={styles.weProvide}>We Provide</div>
-      <div className={styles.andConstruction}>
+      <div className={styles.andPoorConstructionContainer}>
         <p className={styles.becauseOurWork}>&nbsp;</p>
         <p className={styles.becauseOurWork}>&nbsp;</p>
-        <p className={styles.becauseOurWork}>and Construction</p>
+        <p className={styles.becauseOurWork}>and Poor Construction</p>
       </div>
       <button className={styles.discoverMoreWrapper}>
         <div className={styles.discoverMore}>Discover More</div>
@@ -67,7 +76,7 @@ const Component: FunctionComponent = () => {
         <div className={styles.teenyiconsdiscountOutline} />
         <img className={styles.groupIcon} alt="" src="/group.svg" />
       </div>
-      <div className={styles.architecturalDesign}>Architectural design</div>
+      <div className={styles.poorDesign}>Poor design</div>
       <div className={styles.inner} />
       <div className={styles.logo16266917881Parent}>
         <img
@@ -187,10 +196,10 @@ const Component: FunctionComponent = () => {
         >{`the best & quality materials`}</p>
         <p className={styles.becauseOurWork}>in its class.</p>
       </div>
-      <div className={styles.experienced}>Experienced</div>
-      <div className={styles.competitivePrice}>competitive price</div>
-      <div className={styles.onTime}>On Time</div>
-      <div className={styles.bestMaterials}>Best Materials</div>
+      <div className={styles.inExperienced}>In-Experienced</div>
+      <div className={styles.overPrice}>Over price</div>
+      <div className={styles.late}>Late</div>
+      <div className={styles.worstMaterials}>Worst Materials</div>
       <div className={styles.checkOutOurBestServiceYouParent}>
         <div className={styles.checkOutOurContainer1}>
           <p className={styles.theBuildingOwner}>
@@ -280,19 +289,16 @@ const Component: FunctionComponent = () => {
       <div className={styles.seeMoreWrapper}>
         <div className={styles.seeMore}>See More</div>
       </div>
-      <div className={styles.ourStoryWhoContainer}>
-        <p className={styles.becauseOurWork}>Our Story</p>
-        <p className={styles.becauseOurWork}>Who we are</p>
+      <div className={styles.whatDoWeContainer}>
+        <p className={styles.becauseOurWork}>What Do We Do?</p>
+        <p className={styles.becauseOurWork}> Who Are We?</p>
       </div>
       <img className={styles.maskGroupIcon4} alt="" src="/mask-group4@2x.png" />
       <img className={styles.maskGroupIcon5} alt="" src="/mask-group5@2x.png" />
       <img className={styles.maskGroupIcon6} alt="" src="/mask-group6@2x.png" />
       <img className={styles.maskGroupIcon7} alt="" src="/mask-group7@2x.png" />
-      <div className={styles.newsUpdate}>{`News & Update`}</div>
-      <div className={styles.ourCollectionBestContainer}>
-        <p className={styles.becauseOurWork}>Our collection</p>
-        <p className={styles.becauseOurWork}>best project</p>
-      </div>
+      <div className={styles.latestUpdates}>Latest Updates</div>
+      <div className={styles.myCollection}>{`My Collection `}</div>
       <div className={styles.div1}>
         <p className={styles.becauseOurWork}>12</p>
       </div>
@@ -419,24 +425,13 @@ const Component: FunctionComponent = () => {
         alt=""
         src="/unsplash6anudmpilw4@2x.png"
       />
-      <div className={styles.child8} />
       <img className={styles.ellipseIcon} alt="" src="/ellipse-9.svg" />
       <img
         className={styles.bxbxsQuoteLeftIcon}
         alt=""
         src="/bxbxsquoteleft.svg"
       />
-      <div className={styles.weLikeTheContainer}>
-        <p className={styles.weLikeThe}>
-          We like the final result this project,
-        </p>
-        <p className={styles.weLikeThe}>in extraordinary and also provides</p>
-        <p
-          className={styles.becauseOurWork}
-        >{`the best service to the client `}</p>
-      </div>
-      <div className={styles.jacobMolen}>Jacob Molen</div>
-      <div className={styles.child9} />
+      <div className={styles.child8} />
       <img className={styles.biarrowDownIcon2} alt="" src="/biarrowdown1.svg" />
       <img className={styles.biarrowDownIcon3} alt="" src="/biarrowdown2.svg" />
       <div className={styles.happyClientParent}>
@@ -512,6 +507,38 @@ const Component: FunctionComponent = () => {
       >
         Button
       </Button>
+      <TextField
+        className={styles.textAreafilled}
+        sx={{ width: 220 }}
+        color="primary"
+        variant="filled"
+        defaultValue="Text Area"
+        multiline
+        rows={3}
+        label="Label"
+        placeholder="Textarea placeholder"
+        margin="none"
+      />
+      <TextField
+        className={styles.inputfilled}
+        sx={{ width: 220 }}
+        color="primary"
+        variant="filled"
+        defaultValue="Input"
+        type="text"
+        label="Label"
+        size="medium"
+        margin="none"
+      />
+      <FormControl
+        className={styles.selectfilled}
+        sx={{ width: 220 }}
+        variant="filled"
+      >
+        <InputLabel color="success">Label</InputLabel>
+        <Select color="success" size="medium" label="Label" />
+        <FormHelperText />
+      </FormControl>
     </div>
   );
 };
